@@ -1,0 +1,8 @@
+# 基础依赖
+python >= 3.7
+requests == 2.31.0
+selenium == 4.15.2
+pandas == 2.1.4
+openpyxl == 3.1.2  # pandas保存Excel需依赖
+bilibili-api == 1.5.11  # B站API封装库
+lxml == 4.9.3  # 解析XML弹幕
