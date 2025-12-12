@@ -1,8 +1,19 @@
-# 基础依赖
+# 基础环境要求
 python >= 3.7
-requests == 2.31.0
-selenium == 4.15.2
-pandas == 2.1.4
-openpyxl == 3.1.2  # pandas保存Excel需依赖
-bilibili-api == 1.5.11  # B站API封装库
-lxml == 4.9.3  # 解析XML弹幕
+
+# 网络请求核心依赖
+requests == 2.31.0          # 通用HTTP请求（Bli_CDScraper/通用接口调用）
+aiohttp == 3.9.1            # 异步HTTP请求（bilibili-api底层依赖）
+
+# 浏览器自动化（BV号/视频信息爬取）
+selenium == 4.15.2          # 模拟浏览器操作（BvidScraper/VideoInfoCrawler）
+beautifulsoup4 == 4.12.2    # HTML解析（VideoInfoCrawler提取页面元素）
+fake-useragent >= 1.4.0     # 可选：生成随机User-Agent（优化反爬）
+
+# 数据处理与保存
+pandas == 2.1.4             # 数据结构化处理
+openpyxl == 3.1.2           # pandas保存Excel文件依赖
+
+# B站专属依赖
+bilibili-api == 1.5.11      # B站API封装（评论/弹幕爬取）
+lxml == 4.9.3               # XML解析（弹幕数据/页面结构）
