@@ -1,15 +1,17 @@
 # Bilibili_Scraper
 B站科技区内容爬虫工具集，支持爬取排行榜视频BV号、批量获取视频评论/弹幕、多维度提取视频基础信息（适配Shadow DOM解析），适用于B站内容分析、数据采集等学习研究场景。
 
-## 仓库文件结构
-├── Bli_CDScraper.py # 视频评论、弹幕批量获取工具（基于 B 站 API）
-├── BvidScraper.py # B 站科技区排行榜 BV 号爬取工具（Selenium 模拟浏览器）
-├── BilibiliVideoInfoCrawler.py # 视频基础信息爬虫（适配 Shadow DOM，提取播放 / 评论 / 点赞等数据）
-├── README.md # 项目说明文档（使用指南、功能介绍等）
-├── all_bvids.json # 历史爬取的 BV 号列表（批量处理数据源）
-└── data/ # 数据输出目录（运行后自动创建）
-└── BVID_<视频 ID>.xlsx # 单个视频的评论、弹幕等数据（Excel 格式）
-└── bilibili_videos_batch.json # 批量爬取的视频信息
+Bilibili_Scraper/
+├── Bli_CDScraper.py                # 视频评论、弹幕批量获取工具（基于B站API）
+├── BvidScraper.py                  # B站科技区排行榜BV号爬取工具（Selenium模拟浏览器）
+├── BilibiliVideoInfoCrawler.py     # 视频基础信息爬虫（适配Shadow DOM，提取播放/评论/点赞等数据）
+├── README.md                       # 项目总说明文档（安装、使用、注意事项等）
+├── all_bvids.json                  # 历史爬取的BV号列表（批量处理数据源）
+├── requirements.txt                # 项目依赖库清单（含版本约束）
+└── data/                           # 数据输出目录（运行爬虫后自动创建）
+    ├── BVID_<视频ID>.xlsx          # 单视频评论/弹幕数据（Excel格式，来自Bli_CDScraper）
+    └── bilibili_videos_batch.json  # 批量视频基础信息
+
 
 ### 文件功能说明
 1. **Bli_CDScraper.py**  
