@@ -49,8 +49,8 @@ def ensure_dir_exists():
 
 def get_credentials():
     # 请在这里设置你的凭证
-    sessdata = "0cd79a9c%2C1769858379%2Ced1d9%2A81CjDDxZoBx7nkg_2KxJZtJAsamNvB0tFWyjRgSECHJeTXQwSkEBHLvx7EioCumSDYESESVlBIR090Sk5Ub1B4V3QtRnZDT2pRdGx1dmFxNUZQOVVUSFVBd1ZEZFdPa2hWM2NkTVZ5aTlkdEQ3NHFDa3h1VmxUV29pcWlsNjNMekxWVDlHVlhEMXNnIIEC"
-    bilijct = "be43fe5b48b2f98f133a048e7a6bdd9c"
+    sessdata = "0cd79a9c%2C1769858379%2Ced1d9%2A81CjDDxZoBx7nkg_2KxJZtJAsamNvB0tFWyjRgSECHJeTXQwSkEBHLvx7EioCumSDYESESVlBIR090Sk5Ub1B4V3QtRnZDT2pRdGx1dmFxNUZQOVVUSFVBd1ZEZFdPa2hWM2NkTVZ5aTlkdEQ3NHFDa3h1VmxUV29pcWlsNjNMekxWVDlHVlhEMXNnIIE"
+    bilijct = "be43fe5b48b2f98f133a048e7a6bdd9"
     buvid3 = "A7031780-BA1B-DA2A-613B-75A664CAA4DD91000infoc"
 
     return Credential(sessdata=sessdata, bili_jct=bilijct, buvid3=buvid3)
