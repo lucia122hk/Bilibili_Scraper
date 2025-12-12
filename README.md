@@ -35,6 +35,7 @@ Bilibili_Scraper/
 5. **data/**  
    自动生成的输出目录，用于存储：
    - `Bli_CDScraper.py`生成的Excel格式评论/弹幕数据；
+   - 数据示例：BVID_BV1ygZ4YPEty.xlsx
 
 ## 功能说明
 1. **BV号爬取**：通过Selenium爬取B站科技数码区排行榜的视频BV号，支持滚动加载和反爬处理（如随机User-Agent、隐藏自动化特征）。
